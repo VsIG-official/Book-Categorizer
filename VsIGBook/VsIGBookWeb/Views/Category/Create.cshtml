@@ -33,8 +33,14 @@
 		 <button type="submit" class="btn btn-primary btn-lg">Create Category</button>
 		 </div>
 		 <div class="mt-3">
-		 <a asp-controller="Category" asp-action="Index" class="btn btn-secondary btn-lg">Back to the				List
+		 <a asp-controller="Category" asp-action="Index" class="btn btn-secondary btn-lg">Back to the List
 		 </a>
 		 </div>
 	</div>
  </form>
+
+ @section Scripts{
+	 @{
+ <partial name="_ValidationScriptsPartial"></partial>
+	 }
+ }
