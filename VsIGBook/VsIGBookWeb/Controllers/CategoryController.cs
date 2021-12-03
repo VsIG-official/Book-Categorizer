@@ -20,9 +20,20 @@ namespace VsIGBookWeb.Controllers
             return View(categories);
         }
 
+        // GET
         public IActionResult Create()
         {
             return View();
+        }
+
+        // POST
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Category category)
+        {
+            _db.Categories.Add(category);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }
