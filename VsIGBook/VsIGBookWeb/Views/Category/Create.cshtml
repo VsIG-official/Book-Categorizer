@@ -1,0 +1,28 @@
+﻿ @model Category
+
+ <form method="post">
+	 <div class="p-3 mt-4 text-center">
+		 <div class="row pb-2">
+			 <h2 class="text-primary">
+				 Create Category
+			 </h2>
+			 <hr />
+		 </div>
+		 <div class="mb-2 ml-3 d-inline-flex">
+			<div class="col-sm-4">
+				<label asp-for="Name" class="h5"></label>
+			</div>
+			<div class="col-sm-8">
+				<input asp-for="Name" class="form-control pl-3" />
+			</div>
+		 </div>
+		 		 <div class="mb-3 ml-3 d-inline-flex">
+			<div class="col-sm-6">
+				<label asp-for="DisplayOrder" class="h5"></label>
+			</div>
+			<div class="col-sm-4">
+				<input asp-for="DisplayOrder" class="form-control pl-3" />
+			</div>
+		 </div>
+	 </div>
+ </form>

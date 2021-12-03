@@ -19,5 +19,10 @@ namespace VsIGBookWeb.Controllers
 
             return View(categories);
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }
