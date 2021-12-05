@@ -3,6 +3,13 @@
     ViewData["Title"] = "Index";
 }
 
+@if (TempData["success"] != null)
+{
+    <br/>
+    <h2 class="text-center">@TempData["success"]</h2>
+    <hr />
+}
+
 <div class="container p-3">
     <div class="row pt-4">
         <div class="col-6">
