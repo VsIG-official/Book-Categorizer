@@ -1,13 +1,17 @@
 ﻿@if (TempData["success"] != null)
 {
-    <br/>
-    <h2 class="text-center">@TempData["success"]</h2>
-    <hr />
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script type="text/javascript">
+        toastr.success('@TempData["success"]')
+    </script>
 }
 
 @if (TempData["error"] != null)
 {
-    <br/>
-    <h2 class="text-center">@TempData["error"]</h2>
-    <hr />
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+        <script type="text/javascript">
+        toastr.error('@TempData["error"]')
+    </script>
 }
